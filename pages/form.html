@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Newsletter Sign-Up</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Nikolas Misins"><!--unless otherwise commented, all content on this page is by Nikolas-->
+		<link rel="icon" type="image/x-icon" href="../img/favicon.svg">
+		<!--3 links below are fonts links-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+		<!--bootstrap below,NM-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../css/styles.css">
+	</head>
+	<body>
+		
+		<!--NAVBAR ABOVE THIS COMMENT, NEEDS TO BE ADDED-->
+		<br>
+		<div class="container">
+			<div class="row text-center"><!--heading-->
+				<div class="col">
+					<h1>Newsletter Sign-up Form</h1><hr>
+				</div>
+			</div>
+			<div class="row"><!--for form-->
+				<div class="col">
+					<form class="box" action="../index.html">
+						<table align="center">
+							<tr>
+								<td> <label>First Name(required): </label><br> <input type="text" name="userFirstName" id="userFirstName" minlength=2 maxlength=20 required onkeyup="nameListener()"/></td> 
+							</tr>
+							
+							<tr>
+								<td> <label>Last Name(optional): </label><br> <input type="text" name="userLastName" maxlength=20 id="userLastName"/></td>
+							</tr>
+							
+							<tr>
+								<td> <label>Email Adress(required): </label><br> <input type="email" name="userEmail" id="userEmail" minlength=9 required onchange="emailListener()"/><label id="emailRemind"></label> </td> <!--email remind is a DOM that shows when the email isnt inputted correctly-->
+							</tr>
+							
+							<tr>
+								<td>
+									<label>Age(optional): </label><br> <input type="number" name="userAge" id="userAge" min=1 maxlength=2/>
+								</td>
+							</tr>
+							
+							<tr> 
+								<td>
+									<br><p class="bold">Please select the Newsletters you would like to receive<br>(please select at least one)</p> 
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" value="receieveWeekly" name="weeklyUpdates" id="weeklyUpdates" onclick="enableButton()"/><label class="check">Weekly updates regarding Sustainable Development Goal 14</label>
+								</td>
+							</tr>
+							<tr> 
+								<td>
+									<input type="checkbox" value="receieveGeneral" name="genNewsletter" id="genNewsletter" onclick="enableButton()"/><label class="check">Our general newsletter issued monthly</label>
+								</td>
+							</tr>
+							<tr>
+								<td> <!--I am using inline css below because these styles are a once-off operation that will never be needed anywhere else-NM. --> 
+									<br><p style="font-size:60%;margin-bottom:5px;">By submitting this form I agree to share my email adress and other information given</p><input type="submit" value="Submit" id="submitBTN" disabled style="margin-bottom:15px;" onclick="clickedBTN()"> <input type="reset" />
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<script src="../js/form.js"></script><!--placed the js script at the end of the body because placing it before the DOM fully loaded resulted in errors due to the code trying to read elements that have not been loaded yet-NM. -->
+	</body>
+</html>

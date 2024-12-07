@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nikolas Misins" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg" />
+    <!--The fish icon is from fontsawesome, athttps://fontawesome.com/icons/fish?f=classic&s=solid -->
+    <!--3 links below are fonts links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Link the external JavaScript file -->
+    <script src="../js/target-indicator.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">SDG 14</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="../index.html"
+            >Home <span class="sr-only">(current)</span></a
+          >
+        <a class="nav-item nav-link" href="form.html">Newsletter Sign-Up</a>
+        <a class="nav-item nav-link" href="../n-pages/about.html">About Us</a>
+        <a class="nav-item nav-link" href="../n-pages/news.html">Recent News</a>
+          <a class="nav-item nav-link active" href="targets_and_indicators.html"
+            >Targets and Indicators</a
+          >
+          <a class="nav-item nav-link" href="progress_and_info.html"
+            >Progress and Info</a
+          >
+        </div>
+      </div>
+    </nav>
+  <div class="imgTextContainer">
+    <img src="../img/sdg14.jpg" alt="sdg14" width="100px" height="100px">
+    <h1>Target And Indicators</h1>
+  </div>
+     <div class="grid-container">
+  <div class="grid-item">
+ <div class="itemcard">
+    <div class="imgTextContainer">
+      <div>
+      <h2>14.1</h2>
+      <p>By 2025, prevent and significantly reduce marine pollution of all kinds, in particular from land-based activities, including marine debris and nutrient pollution</p>
+      </div>
+      <!--Jensen, N. B. (2021, May 19). school of fish in water. Unsplash. https://unsplash.com/photos/school-of-fish-in-water-BJUoZu0mpt0 -->
+      <img class="cardImage" src="../img/odmaa141.jpg" alt="14.1" width="40%" height="60%">
+      </div>
+      <button class="indicatorBtn" onclick="hideShow1()" type="button">Indicator</button>
+      <div id="target1">
+      <h3>14.1.1</h3>
+       <p>(a) Index of coastal eutrophication; and (b) plastic debris density</p>
+     </div>
+    </div>
+     <div class="itemcard">
+      <div class="imgTextContainer">
+        <div> 
+          <h2>14.3</h2>
+           <p>Minimize and address the impacts of ocean acidification, including through enhanced scientific cooperation at all levels</p>
+        </div>
+          <!--Noaa. (2019, November 26). man carrying silver fish. Unsplash. https://unsplash.com/photos/man-carrying-silver-fish-xp3xtQW3pqs-->
+          <img class="cardImage" src="../img/odmaa143.jpg" alt="14.3" width="40%" height="60%">
+      </div>
+      <button class="indicatorBtn" onclick="hideShow3()" type="button">Indicator</button>
+      <div id="target3">
+      <h3>14.3.1</h3>
+       <p>Average marine acidity (pH) measured at agreed suite of representative sampling stations</p>
+     </div>
+    </div>
+    <div class="itemcard">
+      <div class="imgTextContainer">  
+        <div>
+         <h2>14.5</h2>
+          <p>By 2020, conserve at least 10 per cent of coastal and marine areas, consistent with national and international law and based on the best available scientific information</p>
+        </div>
+          <!--Kryszpiniuk, A. (2017, October 21). bird’s-eye view of sea waves. Unsplash. https://unsplash.com/photos/birds-eye-view-of-sea-waves-4wFqHZ1ONnM-->
+          <img class="cardImage" src="../img/odmaa145.jpg" alt="14.5" width="40%" height="60%">
+          </div>
+          <button class="indicatorBtn" onclick="hideShow5()" type="button">Indicator</button>
+      <div id="target5">
+        <h3>14.5.1</h3>
+        <p>Coverage of protected areas in relation to marine areas</p>
+       </div>
+    </div>   
+        <div class="itemcard">
+          <div class="imgTextContainer">  
+            <div>
+            <h2>14.7</h2>
+              <p>By 2030, increase the economic benefits to Small Island developing States and least developed countries from the sustainable use of marine resources, including through sustainable management of fisheries, aquaculture and tourism</p>
+            </div>
+            <!--Firm, T. I. L. (2020, May 20). woman in dress holding sword figurine. Unsplash. https://unsplash.com/photos/woman-in-dress-holding-sword-figurine-yCdPU73kGSc-->
+            <img class="cardImage" src="../img/odmaa147.jpg" alt="14.7" width="40%" height="60%">
+          </div>
+          <button class="indicatorBtn" onclick="hideShow7()" type="button">Indicator</button>
+      <div id="target7">
+            <h3>14.7.1</h3>
+              <p>Sustainable fisheries as a proportion of GDP in small island developing States, least developed countries and all countries</p>   
+              </div> 
+            </div>
+        </div>
+  <div class="grid-item">
+    <div class="itemcard">
+      <div class="imgTextContainer"> 
+        <div>
+          <h2>14.2</h2>
+            <p>By 2020, sustainably manage and protect marine and coastal ecosystems to avoid significant adverse impacts, including by strengthening their resilience, and take action for their restoration in order to achieve healthy and productive oceans</p>
+        </div>
+          <!--Neom. (2023, April 28). a woman scubas over a colorful coral reef. Unsplash. https://unsplash.com/photos/a-woman-scubas-over-a-colorful-coral-reef-jTxhUMyPTrE -->
+          <img class="cardImage" src="../img/odmaa142.jpg" alt="14.2" width="40%" height="60%">
+      </div>    
+      <button class="indicatorBtn" onclick="hideShow2()" type="button">Indicator</button>
+      <div id="target2">
+          <h3>14.2.1</h3>
+           <p>Number of countries using ecosystem-based approaches to managing marine areas</p>
+     </div>
+   </div>
+       <div class="itemcard">
+          <div class="imgTextContainer"> 
+            <div>
+              <h2>14.4</h2>
+               <p>By 2020, effectively regulate harvesting and end overfishing, illegal, unreported and unregulated fishing and destructive fishing practices and implement science-based management plans, in order to restore fish stocks in the shortest time feasible, at least to levels that can produce maximum sustainable yield as determined by their biological characteristics</p>
+            </div>
+              <!--Dan, O. (2023, March 2). a boat with a life preserver attached to it. Unsplash. https://unsplash.com/photos/a-boat-with-a-life-preserver-attached-to-it-rvJHxci4Qpk-->
+              <img class="cardImage" src="../img/odmaa144.jpg" alt="14.4" width="40%" height="60%">
+          </div>
+            <button class="indicatorBtn" onclick="hideShow4()" type="button">Indicator</button>
+      <div id="target4">
+              <h3>14.4.1</h3>
+                <p>Proportion of fish stocks within biologically sustainable levels</p>
+              </div>
+       </div>
+       <div class="itemcard">
+        <div class="imgTextContainer"> 
+          <div>
+           <h2>14.6</h2>
+            <p>By 2020, prohibit certain forms of fisheries subsidies which contribute to overcapacity and overfishing, eliminate subsidies that contribute to illegal, unreported and unregulated fishing and refrain from introducing new such subsidies, recognizing that appropriate and effective special and differential treatment for developing and least developed countries should be an integral part of the World Trade Organization fisheries subsidies negotiation</p>
+          </div>
+            <!--Lambarri, S. P. (2018, December 11). silver fishes underwater. Unsplash. https://unsplash.com/photos/silver-fishes-underwater-YV593oyMKmo-->
+            <img class="cardImage" src="../img/odmaa146.jpg" alt="14.6" width="40%" height="60%">
+        </div>
+        <button class="indicatorBtn" onclick="hideShow6()" type="button">Indicator</button>
+      <div id="target6">
+           <h3>14.6.1</h3>
+            <p>Degree of implementation of international instruments aiming to combat illegal, unreported and unregulated fishing</p>
+       </div>
+      </div>
+  </div>
+</div>
+
+  </body>
+</html>

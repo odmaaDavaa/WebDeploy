@@ -1,0 +1,111 @@
+body{
+	background-color:#e1fffe; /* universal bg color, do not change-NM(Nikolas Misins)*/
+}
+
+h1{
+	font-family: "Noto Sans";
+	color:#308bff;
+	font-weight:bold; /*Universal heading style, do not change-NM*/
+}
+
+p{
+	font-family:"Radio Canada";
+	font-weight:300; /*universal paragraph style, do not change-NM*/
+}
+
+p.bold {
+	font-weight:bold; /*a class for p called bold that will...make it bold. I mainly made it for use in the form-NM*/
+	font-size:80%;
+}
+
+.box{
+	border:black solid 3px; /*adding the proper styled border, had to add a capitalised C for custom because bootstrap has a class like this-NM*/
+	border-radius:5px;
+	background-color:white;
+}
+
+label{
+	font-family:"Radio Canada"; /*font for form-NM*/
+	font-weight:300;
+}
+
+label.check{
+	margin-left:10px; /*exists just to style the checkbox area in the form- NM*/
+}
+
+td,tr form{
+	text-align:center; /* makes the form in the newsletter sign-up centered -NM*/
+}
+
+<<<<<<< HEAD
+
+
+
+
+
+
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    height: 100vh; /* Full viewport height */
+  }
+
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border: 1px solid #ccc; /* Optional for visual separation */
+    padding: 40px;
+  }
+
+  .grid-item:nth-child(odd) {
+    background-color: skyblue;
+  }
+
+  .grid-item:nth-child(even) {
+    background-color: lightblue;
+  }
+
+  .itemcard{
+  	margin-top: 20px;
+ 
+  }
+  .imgTextContainer{
+  	display: flex;
+  	flex-direction: row;
+  	text-align: center;
+  }
+  .cardImage{
+  	margin-top: 30px;
+  }
+ .indicatorBtn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+
+
+
+
+
+
+
+
+=======
+label#emailRemind ,label#nameRemind{
+	color:red;
+	font-size:50%;
+	position:relative;
+	top:5px;
+}
+>>>>>>> aa0eb1381028deaee881920fa42e7d97e3f35a2b

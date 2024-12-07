@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nikolas Misins" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg" />
+    <!--The fish icon is from fontsawesome, athttps://fontawesome.com/icons/fish?f=classic&s=solid -->
+    <!--3 links below are fonts links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Link the external JavaScript file -->
+    <script src="../js/progress-info.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body onload="hideDivs();">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">SDG 14</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="../index.html"
+            >Home <span class="sr-only">(current)</span></a
+          >
+        <a class="nav-item nav-link" href="form.html">Newsletter Sign-Up</a>
+        <a class="nav-item nav-link" href="../n-pages/about.html">About Us</a>
+        <a class="nav-item nav-link" href="../n-pages/news.html">Recent News</a>
+          <a class="nav-item nav-link" href="targets_and_indicators.html"
+            >Targets and Indicators</a
+          >
+          <a class="nav-item nav-link active" href="progress_and_info.html"
+            >Progress and Info</a
+          ><br>
+        </div>
+      </div>
+    </nav>
+  <div class="imgTextContainer">
+    <img src="../img/sdg14.jpg" alt="sdg14" width="100px" height="100px">
+    <h1>Progress and Info</h1><br>
+  </div>
+
+  <select id="idByYears" onChange="alertChoice();">
+    <option value="">Information by Each Year</option>
+    <option value="2024">2024</option>
+    <option value="2023">2023</option>
+    <option value="2022">2022</option>
+    <option value="2021">2021</option>
+  </select>
+
+  <div id="2024">
+    <!--Marshall, T. (2016, January 13). ocean wave under cloudy sky. Unsplash. https://unsplash.com/photos/ocean-wave-under-cloudy-sky-yEOCA6oiVqg-->
+    <img src="../img/odmaa1.jpg" width="40%" height="60%">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et risus hendrerit justo faucibus tincidunt sed vitae elit. Integer efficitur eros quis feugiat auctor. Aliquam commodo ultricies lorem, a rutrum ipsum dictum eu. Duis sit amet turpis lectus. Nullam congue enim et mi tempus placerat et nec nisl. Duis rhoncus nibh eget felis vulputate, quis rutrum nulla accumsan. Ut tincidunt ultricies bibendum.
+
+    Quisque eu arcu non sem rutrum rhoncus eu ac lacus. Nulla id auctor quam, eleifend dignissim est. Nam tristique ullamcorper enim, vitae mattis sem auctor nec. Curabitur in ullamcorper lectus. Vivamus in sodales erat. Etiam pulvinar, diam non dapibus dapibus, lorem justo volutpat dolor, ac imperdiet est arcu eget lorem. Proin semper leo nisi, eget fermentum libero condimentum et.</p>
+  </div>
+
+  <div id="2023">
+    <!--Bishop, J. (2015, April 13). photo og water. Unsplash. https://unsplash.com/photos/photo-og-water-l61smgU3Y7w-->
+    <img src="../img/odmaa2.jpg" width="40%" height="60%">
+    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+  </div>
+
+  <div id="2022">
+    <!--Hojo, A. (2019, April 16). body of water. Unsplash. https://unsplash.com/photos/body-of-water-ZxGdri2EWzk-->
+    <img src="../img/odmaa3.jpg" width="40%" height="60%">
+    <p>Maecenas mattis convallis egestas. Nam sed arcu tristique, tempus lorem nec, posuere orci. Nulla viverra est nec eros faucibus suscipit. Sed venenatis nunc eu orci tempus, sit amet mollis purus finibus. Etiam egestas, odio sed pulvinar ultricies, sem ligula ullamcorper nibh, nec malesuada tellus justo eget nunc. Ut ultricies tincidunt velit non cursus. Vivamus lobortis, erat et malesuada efficitur, erat nunc pulvinar sapien, id rutrum turpis erat eget erat. Quisque vel gravida nisi, sit amet congue mauris. Vivamus bibendum tincidunt enim, gravida efficitur velit fringilla pharetra. Duis tincidunt mollis mauris, sit amet commodo tellus finibus sit amet. Quisque congue pellentesque nulla, id volutpat mauris consequat cursus. Nullam vel est sit amet lacus iaculis ultricies. Proin egestas vestibulum justo, sed sollicitudin magna fringilla at. Vivamus velit ex, malesuada ac ligula a, scelerisque mollis ex. Sed sed odio ac metus consequat blandit. Fusce sit amet nibh ultrices, ultrices nulla nec, imperdiet neque.
+
+    Fusce commodo convallis tincidunt. Nulla tempor maximus varius. Proin interdum diam vitae libero auctor pretium. Nunc a posuere orci, nec iaculis augue. Sed porta vel libero in ultrices. Pellentesque fermentum sem leo, vitae convallis leo vulputate non. In vel gravida justo. Proin eget luctus dolor, non tincidunt turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+  </div>
+
+  <div id="2021">
+    <!--Marshall, T. (2016b, January 30). ocean tunnel wave. Unsplash. https://unsplash.com/photos/ocean-tunnel-wave-uanoYn1AmPs-->
+    <img src="../img/odmaa4.jpg" width="40%" height="60%">
+    <p>Fusce commodo convallis tincidunt. Nulla tempor maximus varius. Proin interdum diam vitae libero auctor pretium. Nunc a posuere orci, nec iaculis augue. Sed porta vel libero in ultrices. Pellentesque fermentum sem leo, vitae convallis leo vulputate non. In vel gravida justo. Proin eget luctus dolor, non tincidunt turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+    Aenean rhoncus arcu consequat ligula aliquet, ac pharetra tortor dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse convallis ante porta, pulvinar dui eget, hendrerit lacus. Suspendisse consequat nulla nulla, sed consequat purus accumsan eget. Vestibulum sed nunc placerat leo aliquet volutpat eu ut ante. Nunc sit amet erat sit amet enim malesuada interdum. Sed vehicula mollis lectus eu tempor. Integer arcu risus, pulvinar eget aliquam quis, facilisis sit amet lacus. Morbi felis odio, imperdiet elementum lorem at, aliquam congue velit. Morbi feugiat vestibulum ultrices.</p>
+  </div>
+
+  </body>
+</html>
